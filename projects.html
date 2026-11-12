@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects &amp; Certificates | Doodie</title>
+  <meta name="description" content="School projects and certificates by Doodie: databases, system planning, UI mockups, and graphic design.">
+  <meta name="author" content="Doodie">
+  <meta name="theme-color" content="#0c0c0d">
+  <meta property="og:title" content="Projects &amp; Certificates | Doodie">
+  <meta property="og:description" content="School projects and certificates by Doodie: databases, system planning, UI mockups, and graphic design.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 28 9 6l5 22 5-26 5 26 6-14v14z' fill='%231a6dff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Bungee&family=Permanent+Marker&family=Source+Sans+3:wght@400;600&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="inner page-projects">
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <div class="wrap topbar">
+        <a class="logo" href="index.html" aria-label="Doodie, go to home page">
+          <svg viewBox="0 0 34 34" role="img" aria-label="Dorsal plate logo"><path d="M2 30 10 6l5 20 6-24 4 22 7-8v14z" fill="#1a6dff"/></svg>
+          DOODIE
+        </a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav aria-label="Main">
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects &amp; Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="projects">
+        <div class="wrap">
+          <h1 class="page-title" data-ransom>Projects</h1>
+          <p>Projects I've worked on during my studies. This includes both completed and ongoing work.</p>
+          <div class="grid">
+            <article class="card">
+              <h3>Rice Supplier Supply Chain System (2nd Year Advanced Database Project)</h3>
+              <p>A group MySQL database for managing a rice supplier store: suppliers, inventory, orders, and deliveries, with tables designed around real store operations.</p>
+              <span class="stack">MySQL, ERD</span>
+            </article>
+            <article class="card">
+              <h3>Smart Lost and Found (Ongoing Project)</h3>
+              <p>An SDLC planning proposal for a system that helps students report and recover lost items on campus, covering requirements, scope, and a development timeline.</p>
+              <span class="stack">SDLC, system analysis</span>
+            </article>
+            <article class="card">
+              <h3>Student Portfolio (Completed)</h3>
+              <p>A portfolio for ITEC50 where my academic work, HTML, CSS, and JavaScript projects are showcased. <a href="https://doowdie.github.io/fahadzain15/" target="_blank" rel="noopener noreferrer">View Portfolio on Github.</a></p>
+              <span class="stack">HTML, CSS, JS</span>
+            </article>
+            <article class="card">
+              <h3>Slowdive Website Tribute (Completed)</h3>
+              <p>A website tribute for slowdive an activity for ITEC50 which showcases my javascript skills. <a href="https://doowdie.github.io/slwodivetribute/" target="_blank" rel="noopener noreferrer">View Tribute on Github.</a></p>
+              <span class="stack">HTML, CSS, JS</span>
+            </article>
+          </div>
+
+          <h2 class="sub">Certificates</h2>
+          <div class="grid certs">
+            <a class="card" href="badge.jpg" target="_blank" rel="noopener">
+              <img class="thumb-img" src="badge.jpg" alt="HTML Essentials certificate from Cisco Networking Academy">
+              <h3>HTML Essentials</h3>
+              <p>Cisco Networking Academy, 2025.</p>
+              <span class="stack">View certificate &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog class="lightbox" id="lightbox" aria-label="Certificate preview">
+      <div class="lb-box">
+        <button class="lb-close" type="button">Close</button>
+        <img id="lb-img" src="" alt="">
+        <p id="lb-cap"></p>
+      </div>
+    </dialog>
+    <footer>
+      <div class="wrap">&copy; <span id="year">2026</span> Doodie. Built with HTML, CSS, and JavaScript. Cavite State University, Bacoor City Campus. Godzilla artwork &copy; Toho Co., Ltd.</div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

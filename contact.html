@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Doodie</title>
+  <meta name="description" content="Get in touch with Doodie for project ideas, questions, or opportunities.">
+  <meta name="author" content="Doodie">
+  <meta name="theme-color" content="#0c0c0d">
+  <meta property="og:title" content="Contact | Doodie">
+  <meta property="og:description" content="Get in touch with Doodie for project ideas, questions, or opportunities.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 28 9 6l5 22 5-26 5 26 6-14v14z' fill='%231a6dff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Bungee&family=Permanent+Marker&family=Source+Sans+3:wght@400;600&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="inner page-contact">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="logo" href="index.html" aria-label="Doodie, go to home page">
+        <svg viewBox="0 0 34 34" role="img" aria-label="Dorsal plate logo"><path d="M2 30 10 6l5 20 6-24 4 22 7-8v14z" fill="#1a6dff"/></svg>
+        DOODIE
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav aria-label="Main">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects &amp; Certificates</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="contact">
+      <div class="wrap contact">
+        <div>
+          <h1 class="page-title" data-ransom>Contact</h1>
+          <p>Spotted something worth building? Send a signal. I check my messages often and will reply as soon as I can. Thanks for visiting. Stay out of the water.</p>
+          <ul class="links">
+            <li>Email: <a href="mailto:21fahadzai@gmail.com">21fahadzai@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/doowdie" target="_blank" rel="noopener">github.com/doowdie</a></li>
+            <li>Facebook &amp; Messenger: <a href="https://www.facebook.com/meowmeowmreow" target="_blank" rel="noopener">facebook.com/meowmeowmreow</a></li>
+          </ul>
+        </div>
+        <form id="form" action="https://formspree.io/f/mgaajalw" method="POST">
+          <label>Your name:<input name="name" required autocomplete="name" data-fs-field><span data-fs-error="name"></span></label>
+          <label>Your email:<input type="email" name="email" required autocomplete="email" data-fs-field><span data-fs-error="email"></span></label>
+          <label>Message:<textarea name="message" required data-fs-field></textarea><span data-fs-error="message"></span></label>
+          <button type="submit" data-fs-submit-btn>Send message</button>
+          <div data-fs-success>Signal received. Thank you, I will reply soon.</div>
+          <div data-fs-error></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">&copy; <span id="year">2026</span> Doodie. Built with HTML, CSS, and JavaScript. Cavite State University, Bacoor City Campus. Godzilla artwork &copy; Toho Co., Ltd.</div>
+  </footer>
+  <script src="script.js" defer></script>
+  <script src="https://unpkg.com/@formspree/ajax@1.1.5" defer></script>
+  </body>
+</html>
