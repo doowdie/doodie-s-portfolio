@@ -120,7 +120,13 @@ p {
   background:
     url(g-minus-zero.jpg) center/cover no-repeat;
 }
-
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .tint {
   position: absolute;
   inset: 0;
@@ -914,18 +920,6 @@ a.card:focus-visible {
   gap: 4rem;
 }
 
-.links {
-  list-style: none;
-  padding: 0;
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 0.8rem;
-}
-
-.links a {
-  color: var(--accent-hi);
-}
-
 form {
   display: grid;
   gap: 1rem;
@@ -1019,6 +1013,66 @@ form button:hover {
 .contact input[aria-invalid='true'],
 .contact textarea[aria-invalid='true'] {
   border-color: #ff5a5a;
+}
+.social {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem 1.1rem;
+}
+
+.social li:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.social li:nth-child(even) {
+  transform: rotate(2.5deg);
+}
+
+.social a {
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+  width: 5.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social svg {
+  box-sizing: content-box;
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 1.1rem;
+  fill: currentColor;
+  background: var(--ink);
+  border: 2px solid #fff;
+  transform: skewX(-8deg);
+  transition:
+    transform 0.15s,
+    background 0.15s,
+    color 0.15s,
+    box-shadow 0.15s;
+}
+
+.social span {
+  font: 400 1rem var(--display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+}
+
+.social a:hover svg,
+.social a:focus-visible svg {
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--accent);
+  transform: skewX(-8deg) translate(-3px, -3px);
 }
 
 .plan {
@@ -1153,5 +1207,14 @@ main {
   .menu a::before,
   .menu a::after {
     transition: none;
+  }
+  .bg-video {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  .hint {
+    display: none;
   }
 }
